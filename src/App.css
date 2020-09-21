@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+.body {
+  background-color: black;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.genreList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.genreCard {
+  width: auto;
+  justify-content: center;
+  margin: 0 20px;
+}
+.movieCard {
+  max-width: 16rem;
+  margin: 40px 40px;
+  height: 700px;
+  outline: 10px solid rgb(132, 0, 0);
+}
+.load-bar {
+  outline: 2px solid;
+  position: fixed;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+}
+.load-button {
+  width: 50%;
+  margin: 10px;
+}
+.img-div {
+  overflow: hidden;
+  position: relative;
+}
+.hidden-text:hover + img {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+}
+.hidden-text + img {
+  transition-duration: 0.5s;
+}
+.hidden-text:hover {
+  background-color: #00000072;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.hidden-text {
+  padding: 10px 10px;
+  color: white;
+  position: absolute;
+  overflow-y: scroll !important;
+  opacity: 0;
+  z-index: 1;
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.time {
+  color: grey;
+}
+
+p {
+  text-align: center;
+}
+
+.genreBadge {
+  margin: 5px 5px;
+}
